@@ -93,4 +93,4 @@ Limit: 10
 
 ### 19. All the companies that have been founded between 2000 and 2010, but have not been acquired before 2011.
 
-{ $and: [{ founded_year: {$gte: 2000} }, { founded_year: {$lte: 2010} }, { "acquisition.acquired_year": {$gte: 2011} }] }
+Filter: { $and: [{ founded_year: {$gte: 2000} }, { founded_year: {$lte: 2010} }, { "acquisition.acquired_year": {$gte: 2011} }] }
